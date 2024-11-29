@@ -4,61 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covil Terrifier</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Slab&display=swap" rel="stylesheet"> <!-- Fontes Assustadoras -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Slab&display=swap" rel="stylesheet">
     <style>
-        /* Reset e estilos gerais */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Fonte assustadora */
         body {
-            font-family: 'Roboto Slab', serif; /* Font de leitura mais suave para texto */
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: contain; /* Mantém proporções da imagem sem cortes */
-            background-color: black; /* Preenche áreas não cobertas pela imagem */
+            font-family: 'Roboto Slab', serif; 
+            background: url('https://raw.githubusercontent.com/Lucas61421/assets_terrifier/main/background.jpg') no-repeat center center fixed;
+            background-size: contain; 
+            background-color: black; 
             color: white;
-            min-height: 100vh; /* Garante que cubra a altura da janela */
+            min-height: 100vh; 
         }
 
-        /* Fonte Assustadora para Títulos */
         h1, h2 {
-            font-family: 'Creepster', cursive; /* Fonte assutadora para títulos */
-            color: #ff0000; /* Vermelho */
+            font-family: 'Creepster', cursive; 
+            color: #ff0000; 
         }
 
-        /* Header */
         header {
-            background-color: rgba(0, 0, 0, 0.9); /* Fundo preto opaco */
+            background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
             display: flex;
-            justify-content: flex-start; /* Alinha à esquerda */
-            align-items: center; /* Alinha verticalmente */
+            justify-content: flex-start; 
+            align-items: center; 
         }
 
         header h1 {
             margin: 0;
-            padding-left: 20px; /* Pequeno espaço entre logo e título */
+            padding-left: 20px; 
         }
 
         /* Logo */
         .logo {
-            max-width: 150px;  /* Ajuste o tamanho da logo */
+            max-width: 150px;  
             height: auto;
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.9); /* Fundo preto opaco */
+            background-color: rgba(0, 0, 0, 0.9); 
             padding: 20px;
             text-align: center;
         }
 
         footer p {
             margin: 0;
-            color: #ff0000; /* Vermelho */
+            color: #ff0000; 
         }
 
         main {
@@ -67,7 +63,7 @@
 
         section {
             margin: 20px 0;
-            background: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+            background: rgba(0, 0, 0, 0.8); 
             padding: 15px;
             border-radius: 10px;
             display: flex;
@@ -75,34 +71,32 @@
             gap: 20px;
         }
 
-        /* Estilo alternado */
         section:nth-child(odd) {
-            flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
+            flex-direction: row-reverse; 
         }
 
         section:nth-child(even) {
-            flex-direction: row; /* Texto à direita, imagem à esquerda */
+            flex-direction: row; 
         }
 
         section h2 {
             margin-bottom: 10px;
             text-transform: uppercase;
-            color: #ff0000; /* Vermelho */
+            color: #ff0000; 
         }
 
         section p {
             margin-bottom: 15px;
-            flex: 1; /* Texto ocupa o espaço necessário */
+            flex: 1; 
         }
 
         section img {
             width: 200px;
             height: 200px;
-            border-radius: 50%; /* Torna a imagem circular */
-            border: 3px solid #ff0000; /* Borda vermelha */
+            border-radius: 50%; 
+            border: 3px solid #ff0000; 
         }
 
-        /* Menu */
         nav {
             background-color: rgba(0, 0, 0, 0.9);
             display: flex;
@@ -121,19 +115,18 @@
         }
 
         nav a:hover {
-            background-color: #ff0000; /* Vermelho destaque */
+            background-color: #ff0000;
             color: black;
         }
 
-        /* Formulário */
         form {
-            background: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+            background: rgba(0, 0, 0, 0.8); 
             padding: 20px;
             border-radius: 10px;
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
-            border: 2px solid #ff0000; /* Destaque em vermelho */
+            border: 2px solid #ff0000; 
         }
 
         form label {
@@ -148,14 +141,14 @@
             width: 100%;
             margin-bottom: 15px;
             padding: 10px;
-            border: 1px solid #ff0000; /* Borda vermelha */
+            border: 1px solid #ff0000; 
             border-radius: 5px;
-            background-color: black; /* Fundo preto */
-            color: white; /* Texto branco */
+            background-color: black; 
+            color: white; 
         }
 
         form input::placeholder {
-            color: #ff0000; /* Placeholder em vermelho */
+            color: #ff0000; 
         }
 
         .password-container {
@@ -177,8 +170,8 @@
             padding: 10px;
             border: none;
             border-radius: 5px;
-            background-color: #ff0000; /* Vermelho */
-            color: white; /* Texto branco */
+            background-color: #ff0000;
+            color: white; 
             font-size: 1rem;
             cursor: pointer;
             transition: 0.3s;
@@ -186,10 +179,9 @@
 
         form button:hover {
             background-color: white;
-            color: #ff0000; /* Vermelho */
+            color: #ff0000; 
         }
 
-        /* Redes sociais */
         .social-icons {
             display: flex;
             justify-content: center;
@@ -205,13 +197,12 @@
         }
 
         .social-icons a:hover {
-            color: #ff0000; /* Destaque vermelho */
+            color: #ff0000; 
         }
 
-        /* Responsividade */
         @media (max-width: 768px) {
             section {
-                flex-direction: column; /* Alinha tudo verticalmente */
+                flex-direction: column; 
                 text-align: center;
             }
         }
@@ -219,7 +210,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo do Covil Terrifier" class="logo"> <!-- Logo adicionada -->
+        <img src="https://raw.githubusercontent.com/Lucas61421/assets_terrifier/main/logo.png" alt="Logo do Covil Terrifier" class="logo"> 
         <h1>Covil Terrifier</h1>
     </header>
 
@@ -254,23 +245,30 @@
 
         <div id="paginaCompleta" style="display: none;">
             <section id="a-saga">
-                <img src="art.jpg" alt="Art the Clown">
+                <img src="https://raw.githubusercontent.com/Lucas61421/assets_terrifier/main/art.jpg" alt="Art the Clown">
                 <div>
                     <h2>A Saga</h2>
-                    <p>A saga Terrifier é famosa por seu terror intenso e personagens marcantes. Art the Clown é o principal vilão, conhecido por seu comportamento sádico e aparência assustadora.</p>
+                    <p>A franquia Terrifier é uma série de filmes de terror que ganhou destaque pelo seu conteúdo brutal e o icônico vilão Art the Clown. Criada por Damien Leone, a saga começou com o curta-metragem The 9th Circle (2008) e evoluiu para o filme Terrifier (2016), seguido por sua sequência, Terrifier 2 (2022) e, mais recentemente, Terrifier 3(2024).
+
+                        Os filmes acompanham as aterrorizantes ações de Art the Clown, uma figura macabra e silenciosa que combina um humor sombrio com violência extrema. Com cenas gráficas e uma atmosfera de terror visceral, a saga conquistou uma base fiel de fãs, tornando-se referência no subgênero slasher.
+                        
+                        Além da carnificina, a franquia é elogiada por sua estética visual e pelos efeitos práticos impressionantes. Terrifier é mais do que um exercício de horror; é um tributo moderno aos clássicos filmes de terror dos anos 80, com um toque de ousadia que desafia os limites do gênero.</p>
                 </div>
             </section>
 
             <section id="sobre">
-                <img src="sienna.jpg" alt="Sienna">
+                <img src="https://raw.githubusercontent.com/Lucas61421/assets_terrifier/main/sienna.jpg" alt="Sienna">
                 <div>
                     <h2>Sobre Nós</h2>
-                    <p>Bem-vindo ao covil oficial da saga Terrifier! Aqui você encontrará tudo sobre Art the Clown, Sienna, e os filmes que os tornaram ícones do terror moderno.</p>
+                    <p>Somos uma comunidade de fãs apaixonados pela saga Terrifier e pelo icônico Art the Clown. Nosso objetivo é criar um espaço dedicado para compartilhar tudo sobre essa franquia de terror que redefine os limites do gênero slasher. Aqui, você encontrará notícias, curiosidades, análises, teorias e conteúdos exclusivos sobre os filmes.  
+                        
+                        Seja você um veterano que acompanha a jornada de Art desde o início ou um novo fã explorando tal universo macabro, este é o lugar para celebrar, discutir e se aprofundar nesse mundo sombrio e fascinante. 
+                        Bem-vindo ao seu ponto de encontro com o horror!</p>
                 </div>
             </section>
 
             <section id="contatos">
-                <img src="art_hi.jpg" alt="Equipe do site" style="width: 200px; height: 200px; border-radius: 50%; border: 3px solid #ff0000;">
+                <img src="https://raw.githubusercontent.com/Lucas61421/assets_terrifier/main/art_hi.jpg" alt="Equipe do site" style="width: 200px; height: 200px; border-radius: 50%; border: 3px solid #ff0000;">
                 <div>
                     <h2>Contatos</h2>
                     <div class="social-icons">
@@ -301,20 +299,17 @@
         const paginaCompleta = document.getElementById('paginaCompleta');
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita o envio padrão do formulário
+            event.preventDefault(); 
 
             const nome = document.getElementById('nome').value;
             const email = document.getElementById('email').value;
 
-            // Exibe os dados na nova seção
             exibirNome.textContent = nome;
             exibirEmail.textContent = email;
 
-            // Esconde o formulário e mostra os dados
             form.style.display = 'none';
             dadosCadastrados.style.display = 'block';
 
-            // Exibe a página completa
             setTimeout(function() {
                 dadosCadastrados.style.display = 'none';
                 paginaCompleta.style.display = 'block';
